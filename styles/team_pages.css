@@ -1,0 +1,412 @@
+/* <style> */
+/* For gradient background */
+body {
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    /* background: linear-gradient(315deg, rgb(196, 108, 247) 3%, rgba(60, 132, 206, 1) 38%, rgb(132, 231, 128) 68%, rgb(32, 224, 235) 98%); */
+    background: linear-gradient(315deg, rgb(85, 13, 127) 3%, rgb(166, 76, 235) 38%, rgb(90, 43, 199) 68%, rgb(124, 106, 215) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 600%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-15%);
+    }
+
+    50% {
+        transform: translateX(-30%);
+    }
+
+    75% {
+        transform: translateX(-65%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+
+/* </style> */
+
+/* <style> */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    padding: 1%;
+    text-align: center;
+}
+
+.container {
+    height: 250px;
+    /*250px*/
+    width: 250px;
+    /*250px*/
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+    animation: gradient 15s ease infinite;
+    background: linear-gradient(45deg, #7b00e0, #ae31d9);
+}
+
+.container:hover {
+    height: 470px;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+}
+
+.container .wrapper img {
+    position: relative;
+    z-index: 20;
+    border-radius: 50%;
+    display: block;
+    height: 200px;
+    width: 200px;
+    border: 5px solid #fff;
+    object-fit: cover;
+    margin: 20px auto;
+    transition: all 0.3s ease;
+}
+
+.container:hover .wrapper img.active {
+    height: 470px;
+    width: 350px;
+    margin: 0px auto;
+    border: none;
+    border-radius: 5px;
+}
+
+.wrapper .title {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px;
+    line-height: 25px;
+}
+
+.wrapper .place {
+    color: #fff;
+    font-size: 17px;
+    line-height: 0px;
+    margin: 10px 0;
+}
+
+.content {
+    color: #fff;
+    font-size: 17px;
+    margin-top: 10px;
+    padding: 1px 20px 10px 20px !important;
+}
+
+.content .buttons {
+    display: flex;
+}
+
+.buttons .btn {
+    height: 40px;
+    width: 100%;
+    /*150px*/
+    margin: 0 5px;
+}
+
+.buttons .btn button {
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.btn button:hover {
+    transform: scale(0.95);
+}
+
+.container .icons {
+    position: relative;
+    margin-top: -435px;
+    margin-left: 10px;
+    list-style: none;
+}
+
+.container .icons.active {
+    display: none;
+}
+
+.container .icons li {
+    height: 40px;
+    width: 40px;
+    margin: 5px 0;
+    opacity: 0;
+    margin-left: -100px;
+    transition: all 0.5s ease;
+}
+
+.container:hover .icons li {
+    opacity: 1;
+    margin-left: 7px;
+}
+
+.container:hover .icons li:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.container:hover .icons li:nth-child(3) {
+    transition-delay: 0.4s;
+}
+
+.container .icons li a {
+    color: #7b00e0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: #fff;
+    display: block;
+    line-height: 40px;
+    transition: all 0.3s;
+}
+
+.container .icons li a:hover {
+    transform: scale(0.9);
+}
+
+/* </style> */
+
+/* <style> */
+.custom_button {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #7b00e0;
+    transition: all 1000ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid #7b00e0;
+}
+
+.custom_button:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 2px solid #7b00e0;
+    box-shadow: 4px 5px 17px -4px #ae31d9;
+}
+
+.custom_button::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #7b00e0;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+}
+
+.custom_button:hover::before {
+    width: 250%;
+}
+
+/* </style> */
+
+/* <style> */
+.block1 {
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+}
+
+.block2 {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* </style> */
+
+/* <style> */
+/* FOR pop-up window */
+
+.custom-model-main {
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* z-index: 1050; */
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    opacity: 0;
+    -webkit-transition: opacity 0.15s linear, z-index 0.15;
+    -o-transition: opacity 0.15s linear, z-index 0.15;
+    transition: opacity 0.15s linear, z-index 0.15;
+    z-index: -1;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.model-open {
+    z-index: 99999;
+    opacity: 1;
+    overflow: hidden;
+}
+
+.custom-model-inner {
+    -webkit-transform: translate(0, -25%);
+    -ms-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    -o-transition: -o-transform 0.3s ease-out;
+    transition: -webkit-transform 0.3s ease-out;
+    -o-transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+    display: inline-block;
+    vertical-align: middle;
+    width: 600px;
+    margin: 30px auto;
+    max-width: 97%;
+}
+
+.custom-model-wrap {
+    display: block;
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    background-clip: padding-box;
+    outline: 0;
+    text-align: left;
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+}
+
+.model-open .custom-model-inner {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    position: relative;
+    z-index: 999;
+}
+
+.model-open .bg-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 99;
+}
+
+.bg-overlay {
+    background: rgba(0, 0, 0, 0);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    -webkit-transition: background 0.15s linear;
+    -o-transition: background 0.15s linear;
+    transition: background 0.15s linear;
+}
+
+.close-btn {
+    position: absolute;
+    right: 0;
+    top: -30px;
+    cursor: pointer;
+    z-index: 99;
+    font-size: 30px;
+    color: #fff;
+}
+
+@media screen and (min-width:800px) {
+    .custom-model-main:before {
+        content: "";
+        display: inline-block;
+        height: auto;
+        vertical-align: middle;
+        margin-right: -0px;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:799px) {
+    .custom-model-inner {
+        margin-top: 45px;
+    }
+}
+
+/* </style> */
