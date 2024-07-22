@@ -90,6 +90,10 @@ $(".pop-animeri").on('click', function () {
     $(".animeri").addClass('model-open');
 });
 
+$(".pop-hema").on('click', function () {
+    $(".hema").addClass('model-open');
+});
+
 // Core Development
 $(".pop-divya").on('click', function () {
     $(".divya").addClass('model-open');
@@ -113,6 +117,10 @@ $(".pop-ajit").on('click', function () {
 
 $(".pop-abraham").on('click', function () {
     $(".abraham").addClass('model-open');
+});
+
+$(".pop-amit").on('click', function () {
+    $(".amit").addClass('model-open');
 });
 
 // Core Platform
