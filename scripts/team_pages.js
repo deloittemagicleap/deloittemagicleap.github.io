@@ -61,6 +61,10 @@ $(".pop-janaki").on('click', function () {
     $(".janaki").addClass('model-open');
 });
 
+$(".pop-shwetha").on('click', function () {
+    $(".shwetha").addClass('model-open');
+});
+
 // P2R
 $(".pop-srinivas").on('click', function () {
     $(".srinivas").addClass('model-open');
