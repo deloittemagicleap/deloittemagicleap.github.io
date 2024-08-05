@@ -4,8 +4,8 @@ body {
     margin: auto;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     overflow: auto;
-    /* background: linear-gradient(315deg, rgb(89, 100, 53) 3%, rgb(203, 224, 146) 38%, rgb(109, 115, 96) 68%, rgb(62, 66, 51) 98%); */
-    background: linear-gradient(315deg, rgb(85, 13, 127) 3%, rgb(166, 76, 235) 38%, rgb(90, 43, 199) 68%, rgb(124, 106, 215) 98%);
+    background: linear-gradient(315deg, rgb(89, 100, 53) 3%, rgb(203, 224, 146) 38%, rgb(109, 115, 96) 68%, rgb(62, 66, 51) 98%);
+    /* background: linear-gradient(315deg, rgb(85, 13, 127) 3%, rgb(166, 76, 235) 38%, rgb(90, 43, 199) 68%, rgb(124, 106, 215) 98%); */
     animation: gradient 15s ease infinite;
     background-size: 400% 400%;
     background-attachment: fixed;
@@ -79,10 +79,10 @@ body {
 .card {
     --main-color: #dedede;
     --sub-color: #ffffff;
-    /* --bg-color: #4a484a; */
-    --bg-color: #7b00e0;
-    /* --bg-color: #000000; */
-    --accent-color: rgb(197, 137, 220);
+    --bg-color: #4a484a;
+    /* --bg-color: #7b00e0; */
+    /* --accent-color: rgb(197, 137, 220); */
+    --accent-color: rgb(203, 224, 146);
     position: relative;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     width: 20%;

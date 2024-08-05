@@ -94,6 +94,10 @@ $(".pop-hema").on('click', function () {
     $(".hema").addClass('model-open');
 });
 
+$(".pop-siva").on('click', function () {
+    $(".siva").addClass('model-open');
+});
+
 // Core Development
 $(".pop-divya").on('click', function () {
     $(".divya").addClass('model-open');
